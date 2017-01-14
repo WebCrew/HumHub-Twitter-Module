@@ -7,10 +7,7 @@
     ); ?>
   </div>
   <div class="panel-body">
-
-    <a class="twitter-timeline"
-  href="https://twitter.com/{The_TodGmbH}">
-Tweets by @{The_TodGmbH}
-</a>
+<a class="twitter-timeline" href="https://twitter.com/The_TodGmbH">Tweets by The_TodGmbH</a> 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
