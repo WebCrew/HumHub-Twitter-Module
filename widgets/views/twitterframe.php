@@ -8,8 +8,14 @@ use humhub\models\Setting;
   </div>
   <div class="panel-body">
       
-    <a class="twitter-timeline" href="https://twitter.com/The_TodGmbH">Tweets by The_TodGmbH</a> 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline"
+     href="https://twitter.com/The_TodGmbH"
+     data-tweet-limit="3"
+     data-theme="dark"
+     data-chrome="nofooter">
+     Tweets by @The_TodGmbH
+  </a>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </div>
 </div>
