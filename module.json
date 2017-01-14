@@ -1,0 +1,18 @@
+{
+    "id": "twitter",
+    "name": "Twitter",
+    "description": "Adds a panel on the Dashboard, to show the Twitter Timeline.",
+    "keywords": ["twitter", "timeline", "spaces", "widget", "dashboard"],
+	"version": "0.1",
+	"authors": [
+		{
+			"name": "Andreas Holzer"
+		}
+	],
+	"homepage": "https://github.com/WebCrew/",
+	"license": "MIT",
+	"time": "2016-10-01",
+	"humhub": {
+		"minVersion": "0.8.0"
+	}
+}
