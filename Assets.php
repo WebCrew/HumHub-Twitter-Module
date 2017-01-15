@@ -1,7 +1,7 @@
 <?php
 
 
-namespace humhub\modules\twitter;
+namespace humhub\modules\discord;
 
 use yii\web\AssetBundle;
 

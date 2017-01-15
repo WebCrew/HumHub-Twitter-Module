@@ -1,5 +1,5 @@
 <?php
-namespace humhub\modules\twitter;
+namespace humhub\modules\discord;
 
 class Module extends \humhub\modules\content\components\ContentContainerModule
 {

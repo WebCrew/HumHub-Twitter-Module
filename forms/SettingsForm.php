@@ -1,5 +1,5 @@
 <?php
-namespace humhub\modules\twitter\forms;
+namespace humhub\modules\discord\forms;
 
 use Yii;
 
@@ -39,7 +39,7 @@ class SettingsForm extends \yii\base\Model
     public function attributeLabels()
     {
         return [
-            'sort' => Yii::t('TwitterModule.base', 'sort')
+            'sort' => Yii::t('DiscordModule.base', 'sort')
         ];
     }
 }

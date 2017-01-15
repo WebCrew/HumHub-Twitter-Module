@@ -1,5 +1,5 @@
 <?php
-namespace humhub\modules\twitter\controllers;
+namespace humhub\modules\discord\controllers;
 
 use Yii;
 use humhub\models\Setting;
@@ -20,16 +20,16 @@ class AdminController extends \humhub\modules\admin\components\Controller
 
     public function actionIndex()
     {
-        $form = new \humhub\modules\twitter\forms\SettingsForm();
+        $form = new \humhub\modules\discord\forms\SettingsForm();
         if ($form->load(Yii::$app->request->post())) {
             if ($form->validate()) {
-                Setting::Set('sort', $form->sort, 'twitter');
+                Setting::Set('sort', $form->sort, 'discord');
                 
-                Yii::$app->session->setFlash('data-saved', Yii::t('TwitterModule.base', 'Saved'));
+                Yii::$app->session->setFlash('data-saved', Yii::t('DiscordModule.base', 'Saved'));
                 // $this->redirect(Url::toRoute('index'));
             }
         } else {
-            $form->sort = Setting::Get('sort', 'twitter');
+            $form->sort = Setting::Get('sort', 'discord');
         }
         
         return $this->render('index', [

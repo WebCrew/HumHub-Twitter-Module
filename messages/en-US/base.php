@@ -1,6 +1,6 @@
 <?php
 return [
-    'Twitter' => 'Twitter',
-    'sort' => 'Twitter sort order',
+    'Discord' => 'Discord',
+    'sort' => 'Discord sort order',
     'save' => 'Save',
 ];
