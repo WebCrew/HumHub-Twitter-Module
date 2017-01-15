@@ -2,6 +2,9 @@
 
 Adds a panel on the Dashboard, with the Twitter Timeline.
 
+### Attention
+Please note, this module may not be used by **SSL** users.
+
 ### Installation
 
 -  open: widgets/views/twitterframe.php
