@@ -15,7 +15,7 @@ class Events extends \yii\base\Object
             'label' => Yii::t('TwitterModule.base', 'Twitter Settings'),
             'url' => Url::toRoute('/twitter/admin/index'),
             'group' => 'settings',
-            'icon' => '<i class="fa fa-weixin"></i>',
+            'icon' => '<i class="fa fa-twitter"></i>',
             'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'twitter' && Yii::$app->controller->id == 'admin',
             'sortOrder' => 650
         ]);
