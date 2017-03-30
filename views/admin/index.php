@@ -1,6 +1,5 @@
 <?php
 
-use yii
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 use humhub\models\Setting;
