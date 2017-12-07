@@ -15,7 +15,7 @@ use humhub\models\Setting;
   <div class="panel-body">
 
 <?= Html::beginTag('div') ?>
-<a class="twitter-timeline" href="<?= $twitterUrl; ?>"></a> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="<?= $twitterUrl; ?>" width="100%" height="500"></a> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <?= Html::endTag('div'); ?>
 
 </div>
