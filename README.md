@@ -1,27 +1,16 @@
-## Twitter
+[![](/resources/Twitterlogo.png)](https://twitter.com/)
 
-Adds a panel on the Dashboard, with the Twitter Timeline.
+## [HumHub](https://www.humhub.org/en) Twitter Module
 
+Adds a Twitter widget to HumHub`s sidebar.
 
-***
+## Installing & Setup
+1. Download via git or normal download.
+2. Upload the content of your `humhub-twitter-module-master` to your server under `/protected/modules` and rename it `twitter`
+3. Enable the module via `ACP --> Modules --> Modules List`
+4. In `ACP --> Twitter Settings` place your Twitter URL in the configuration option then save and now you're done.
 
-**NOTE: I will no longer make use of HumHub and I stop updating my modules and themes for HumHub. It is up to you, you are welcome to update the modules and themes in the future.**
+### __Authors:__
+@WebCrew
 
-***
-
-
-
-### Attention
-Please note, this module may not be used by **SSL** users.
-
-### Installation
-
--  open: widgets/views/twitterframe.php
--  do your settings on line 11
--  then save changes and upload the module to HumHub/protected/modules
--  rename the module to **twitter**
--  go to HumHub Admin Panel and activate the module
-
-__Author:__ Andreas Holzer
-
-Inspired by Dwarfs and Goblins :)
+@Felli

@@ -1,4 +1,5 @@
 <?php
+
 namespace humhub\modules\twitter;
 
 use Yii;
@@ -8,7 +9,6 @@ use humhub\models\Setting;
 
 class Events extends \yii\base\Object
 {
-
     public static function onAdminMenuInit(\yii\base\Event $event)
     {
         $event->sender->addItem([
@@ -20,7 +20,6 @@ class Events extends \yii\base\Object
             'sortOrder' => 650
         ]);
     }
-
 public static function addTwitterFrame($event)
     {
         if (Yii::$app->user->isGuest) {

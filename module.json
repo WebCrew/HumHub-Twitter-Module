@@ -1,10 +1,10 @@
 {
     "id": "twitter",
     "name": "Twitter",
-    "description": "Adds a Twitter Panel to HumHub`s sidebar.",
-    "keywords": ["twitter", "panel"],
-    "version": "0.0.2",
+    "description": "Adds a Twitter widget to HumHub`s sidebar.",
+    "keywords": ["twitter","widget"],
+    "version": "1.0.0",
     "humhub": {
-        "minVersion": "1.0"
+    "minVersion": "1.0"
     }
 }

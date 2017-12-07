@@ -1,40 +1,20 @@
 <?php
+
 namespace humhub\modules\twitter\controllers;
 
 use Yii;
-use humhub\models\Setting;
-use yii\helpers\Url;
+use humhub\modules\admin\components\Controller;
+use humhub\modules\twitter\models\ConfigureForm;
 
-class AdminController extends \humhub\modules\admin\components\Controller
+class AdminController extends Controller
 {
-
-    public function behaviors()
-    {
-        return [
-            'acl' => [
-                'class' => \humhub\components\behaviors\AccessControl::className(),
-                'adminOnly' => true
-            ]
-        ];
-    }
-
     public function actionIndex()
     {
-        $form = new \humhub\modules\twitter\forms\SettingsForm();
-        if ($form->load(Yii::$app->request->post())) {
-            if ($form->validate()) {
-                Setting::Set('sort', $form->sort, 'twitter');
-                
-                Yii::$app->session->setFlash('data-saved', Yii::t('TwitterModule.base', 'Saved'));
-                // $this->redirect(Url::toRoute('index'));
-            }
-        } else {
-            $form->sort = Setting::Get('sort', 'twitter');
+        $model = new ConfigureForm();
+        $model->loadSettings();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->view->saved();
         }
-        
-        return $this->render('index', [
-            'model' => $form
-        ]);
+        return $this->render('index', ['model' => $model]);
     }
-
 }
