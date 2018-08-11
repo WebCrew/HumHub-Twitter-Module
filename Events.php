@@ -7,7 +7,7 @@ use yii\helpers\Url;
 use humhub\modules\twitter\widgets\TwitterFrame;
 use humhub\models\Setting;
 
-class Events extends \yii\base\Object
+class Events extends \yii\base\BaseObject
 {
     public static function onAdminMenuInit(\yii\base\Event $event)
     {
